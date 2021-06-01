@@ -107,6 +107,7 @@ h1, h2, h3 {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: .25rem;
+  z-index: 998;
 }
 
 .navbar-toggler-icon {
@@ -168,6 +169,7 @@ h1, h2, h3 {
 
 .portafolio{
   background: #f2f2f2;
+  width: inherit;  /*agregado*/
 }
 
 .galeria-port{
@@ -220,6 +222,9 @@ h1, h2, h3 {
 .imagen-port:hover .hover-galeria{
   transform: scale(1);
 }
+/* ________________________________ */
+
+
 
 
 
@@ -233,7 +238,7 @@ p {
 .container {
   margin: 0 auto;
   width: 90%;
-  margin-left: 12rem;
+  margin-left: 6rem;
   overflow: hidden;
 }
 
@@ -280,7 +285,6 @@ p {
   .columna {                   /*columna*/
     width: 45%;
     margin-bottom: 1rem;
-    
   }
 }
 @media (max-width:200px) {

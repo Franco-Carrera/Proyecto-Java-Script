@@ -1,5 +1,3 @@
-const listaOrdenadores = [];
-let misOrdenadores = ('Ingrese la cantidad de compus que desee comprar');
 
 function valida() {
     let nombre = document.getElementById ('nombre').value;
@@ -23,7 +21,6 @@ function valida() {
  console.log ('Nombre: ' + nombre + ' Compras: ' +valorRadio + ' Es deportista: ' + deportista );
 }
 
-
 function limpiar() {
    let nombre = document.getElementById ('nombre').value = '';
    let radios = document.getElementsByName ('comprar');
@@ -38,68 +35,12 @@ function limpiar() {
    deportista.checked = false;
 
 }
+//_______________________________________________________
 
 
-  const galeria = document.getElementsByClassName ('portafolio');
-
-  //Registro de productos 
-   const productos = [ 
-     {
-       id: 1,
-       nombre: 'Ketpler',
-       stock: 'Hay',
-       peso: '10kg'
-     },
-
-     {
-      id: 2,
-      nombre: 'Pelota goma',
-      stock: 'Hay',
-      peso: '800 gramos'
-    },
-     
-    {
-      id: 3,
-      nombre: 'Mancuernas',
-      stock: 'Hay',
-      peso: '12kg'
-    },
-
-    {
-      id: 4,
-      nombre: 'Rueda',
-      stock: 'No Hay',
-      peso: '1kg'
-    },
-
-   ];
-
-   function insertarGaleria (galeria, producto) {
-      
-      const encuadre = document.createElement ('div');
-
-      for (const atributo in producto)
-       {
-        const celda = document.createElement ('img');
-
-            celda.textContent = producto [atributo];
-
-             encuadre.appendChild (celda); 
-      }
-     
-      galeria.appendChild (encuadre);
-
-   }
-
-    for (const producto of productos) {
-      insertarGaleria (galeria, producto);
-    }
-   
-
-
-
-
-
+ const listaOrdenadores = [];
+ let misOrdenadores = ('Ingrese la cantidad de compus que desee comprar');
+    
 
 const crearListaDeOrdenadores = function (cantidad) {
   for (let i = 1; i <= cantidad; i++){
@@ -116,9 +57,9 @@ const crearListaDeOrdenadores = function (cantidad) {
   } 
 }  
    crearListaDeOrdenadores (misOrdenadores);
-
+  
  console.log (listaOrdenadores); 
-
+  console.log (misOrdenadores);
 //  alert ('Ha realizado su pago con exito');
 
  const compus = [
@@ -144,6 +85,5 @@ const crearListaDeOrdenadores = function (cantidad) {
  }
 
  ];
-
  console.log (compus);
  
