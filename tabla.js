@@ -1,74 +1,73 @@
 
      // ELEMENTOS HTML
-     const tabla = document.getElementById("tabla-personas");
+     const tabla = document.getElementById("tabla-elementos");
 
 
      // REGISTRO DE PERSONAS 
-     const personas = [
+     const elementos = [
         {
              id: 1,
-             nombre: "Guy",
-             apellido: "Rose",
-             email: "guy.rose@example.com",
+             nombre: "Pesas kettlebell ",
+             Stock: "disponible",
+             función: "entrenamiento muscular",
              direccion: "2668 Ranchview Dr"
          },
            
          {
              id: 2,
-             nombre: "Ritthy",
-             apellido: "Hill",
-             email: "ritthy.hill@example.com",
+             nombre: "Pelota de yoga",
+             stock: "disponible",
+             función: " flexibilidad y equilibrio",
              direccion: "9117 Oak Ridge Ln"
          },
             
          {
              id: 3,
-             nombre: "Derrick",
-             apellido: "Hanson",
-             email: "derrick.hanson@example.com",
+             nombre: "Mancuernas ",
+             stock: "disponible",
+             función: "fuerza muscular",
              direccion: "4240 Photinia Ave"
          },
      
          {
              id: 4,
-             nombre: "Ted",
-             apellido: "Peters",
-             email: "ted.peters@example.com",
+             nombre: "Rueda abdominal",
+             stock: "Intermedio",
+             función: "desarrollo de abdomen",
              direccion: "2976 Valley View Ln"
          },
      
          {
              id: 5,
-             nombre: "Ted",
-             apellido: "Peters",
-             email: "ted.peters@example.com",
+             nombre: "Step",
+             stock: "Intermedio",
+             función: "desarrollo de glúteos",
              direccion: "2995 Edwards Rd"
-         },
+         }
      
-        {
-              id: 6,
-              nombre: 'Fausto',
-              apellido: 'Carmesí',
-              email: 'Fauscarmesí@them.com',
-              direccion: 'West Side Records'
-         } 
-     
-     ]; //_/agregamos ;
+        // {
+        //       id: 6,
+        //       nombre: 'Fausto',
+        //       apellido: 'Carmesí',
+        //       email: 'Fauscarmesí@them.com',
+        //       direccion: 'West Side Records'
+        //  } 
+     ];  
      
      
      // FUNCIONES DEL DOM
-     function insertarFila(tabla, persona) {
+     function insertarFila(tabla, elemento) {
      
          const fila = document.createElement("tr");
          
-         for (const atributo in persona) {
+         for (const atributo in elemento) {
      
              // Creamos una celda nueva
              const celda = document.createElement("td");
              celda.style.color = 'grey';                //+ color
      
              // Asignamos el valor del atributo como contenido textual dentro de la celda.
-             celda.textContent = persona[atributo]; 
+             celda.textContent = elemento[atributo]; 
              // Usamos la notación corchetes para acceder al atributo ya que es una variable.
      
              // Insertamos la celda a nuestra fila.
@@ -83,8 +82,18 @@
          
      
      // Recorremos el array y las mostramos en HTML
-     for (const persona of personas) {
-         insertarFila(tabla, persona);
+     for (const elemento of elementos) {
+         insertarFila(tabla, elemento);
      }
      //______________________________________________
      
+
+    // declare a variables first
+const $clickMeElement = $('.galeria-port').eq(0);
+ 
+// use this variable
+$clickMeElement.on( "click", function() {
+    alert("Estos son productos originales");
+});
+
+//Desarrollo de DOM y eventos
