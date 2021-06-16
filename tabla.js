@@ -96,4 +96,52 @@ $clickMeElement.on( "click", function() {
     alert("Estos son productos originales");
 });
 
+
 //Desarrollo de DOM y eventos
+
+$(document).ready(function() {
+    //Declarar variables reutilizables
+   let  input = $("#nombre");
+   let contenido = $("#contenido");
+  
+    //Evento keyup
+    input.keyup(function() {
+      console.log(input.val()); //verificamos en consola
+      contenido.html(input.val()); //agregamos en contenido
+  
+      //Podemos verificar si está vacio el input
+      if (input.val() === "") {
+        contenido.html("Estoy esperando...");
+      }
+    });
+  });
+
+
+ //Efectos mostrar ocultar
+ $(document).ready(function() {
+    let ocultar = $("#ocultar");
+    let mostrar = $("#mostrar");
+    let toggle = $("#toggle");
+    let elemento = $("#elemento");
+  
+    ocultar.click(function() {
+      elemento.hide(1000);
+    });
+  
+    mostrar.click(function() {
+      elemento.show(1000);
+    });
+  
+    toggle.click(function() {
+      elemento.toggle(1000);
+    });
+  });
+
+
+
+   $ ('#btn-5').click (  () => {    
+     $ ('.table').toggle(5000)
+
+ });
+
+

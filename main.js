@@ -20,6 +20,8 @@ function valida() {
 
  console.log ('Nombre: ' + nombre + ' Compras: ' +valorRadio + ' Es deportista: ' + deportista );
 }
+
+
 //Limpiandolos
 function limpiar() {
    let nombre = document.getElementById ('nombre').value = '';
@@ -46,9 +48,9 @@ function limpiar() {
 const crearListaDeProductos = function (cantidad) {
   for (let i = 1; i <= cantidad; i++){
       const producto = [];
-      let nombreProducto = prompt (`Ingrese el nombre del producto nº ${i}`);
+      let nombreProducto = (`Ingrese el nombre del producto nº ${i}`);
       producto.push (nombreProducto);
-      let numeroProducto = parseInt (prompt(`Ingrese el numero de su producto ${nombreProducto}`));
+      let numeroProducto =(`Ingrese el numero de su producto ${nombreProducto}`);
        listaProductos.push (producto);
        
   }
@@ -145,7 +147,7 @@ const crearListaDeProductos = function (cantidad) {
     if (typeof elemento == 'object') {
      console.log  (elemento.stock)
     }
-     console.log (elemento);
+    //  console.log (elemento);
   });  
 
      //Como mostrar al cliente si hay o no stock en página

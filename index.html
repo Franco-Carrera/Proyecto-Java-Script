@@ -52,7 +52,7 @@
                       <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item menu active">
-                      <a class="nav-link" href="about.html">about</a>
+                      <a class="nav-link" href="#">about</a>
                     </li>
                     <li class="nav-item menu active">
                       <a class="nav-link" href="Mis trabajos.html">Portfolio</a>
@@ -64,6 +64,7 @@
 
                 </div>
             </nav> 
+
          </div>
        </header>
 
@@ -96,8 +97,8 @@
     <p> El ejercicio regular es bueno para la salud y puede ayudarle a bajar de peso. La buena noticia es que nunca es demasiado tarde para empezar. Usted puede comenzar de a poco y encontrar maneras de hacer más actividad física en su vida. Para obtener el mayor beneficio, usted debe tratar de realizar la cantidad recomendada de ejercicio para su edad. Si usted lo logra, se sentirá mejor, ayudará a prevenir o controlar muchas enfermedades y puede incluso vivir más tiempo.</p>
     </div>
   </div>                                            <!--__Div2?-->  
-          
-  
+        
+
 <!-- Portfolio -->
 <section class="portafolio">
   <div class="contenedor">
@@ -164,9 +165,12 @@
 </section>
 
         <!-- Pasar a productos en stock -->
+
+        <button id="btn-5">Productos table</button>
+
 <table class="table table-hover">
 
-  <caption>Listado de elementos</caption>
+  <caption class="caption">Listado de elementos</caption>
   
   <thead class="thead-dark">
       <th scope="col">#</th>
@@ -176,6 +180,7 @@
       <th scope="col">Dirección</th>
   </thead>
 
+
   <tbody id="tabla-elementos"></tbody>
 
 </table>
@@ -183,7 +188,10 @@
 
 <!--..........Lista de productos y precios.......... -->
 
-   <section class="container flexproduct text-center">
+
+
+ 
+   <section class="conteiner flexproduct text-center">
      <div class="columna">
         <h2 class="h2precio">Plan Uno</h2>
         <p class="precio">$600</p>
@@ -231,14 +239,29 @@
      <br>
     <!-- luego sacar br -->
   
- 
+
+    <section class="cajaFlexing"> 
+      <div class="divItem">
+        <p class="p1">Nuestro lema es: Ir a por aquello <em>que nos mejora como personas</em></p>
+         <ul class="ulItem">
+           1- Otra lista mágica
+           2- Volando bajito como avioneta
+           3- Quiere comprar valentino 
+         </ul>
+      </div>
+  </section>
+
 
 
 
   <form class="formulario">
     <div class="formularioItems">
-     Nombre: <input class="input" type="text" id="nombre" autocomplete="off">
-
+      <div class="container my-5">
+      Nombre: <input class="form-control" type="text" id="nombre" autocomplete="off" placeholder="Escribe tu nombre">
+      <div class="bg-dark text-white mt-5 p-2" id="contenido">
+         Estoy esperando...
+      </div>  
+    </div>
       <br> Comprar aquí: SI <input type="radio" id="si" name="comprar" value="SI">
       <br>
 <hr>
@@ -251,6 +274,19 @@
       <button class="button" type="button" onclick="limpiar()" >Limpiar</button>
     </div>
   </form>
+
+
+  <div class="container my-5">
+    <button class="btn btn-warning" id="ocultar">Ocultar</button>
+    <button class="btn btn-warning" id="mostrar">Mostrar</button>
+    <button class="btn btn-warning" id="toggle">Toggle</button>
+  
+    <div class="mt-5 bg-danger text-white py-5 text-center text-uppercase" id="elemento">
+      <p>Usted acaba de comprar un producto</p>
+    </div>
+  
+  </div>
+
 
 
 
@@ -290,6 +326,7 @@
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
 
     <script src="main.js"></script>
     <script src="tabla.js"></script>  
